@@ -1,25 +1,28 @@
-# Your task
-This example project is a lightweight version of an CMS component renderer. 
-Your task is to create 4 components representing data coming from ./src/mock-data/page.js.
-Currently only one component called “Stringifier” is rendering all components coming from the CMS 
-(this looks pretty ugly right now ;-)).
-
+<<<<<<< HEAD
 ## Scripting
-Your starting point is ./src/App.js. PageData is passed down to CMSPage container. CMSPage renders the ‘Stringifier’ component.
-You have to replace the ‘Stringifier’ with your own solution to render those 4 components differently.
-How they will look like is up to. You can just use simple HTML5 representations of them.
+I have created the 4 components separately based on the arguments passed through the CMSComponent - rendred by CMSPage - in stead of Stringifier component, and these arguments were of course based on the data coming from the ./src/mock-data/page.js .
+Ps : if the no type corresponds to those in the mock-data, render by default the stringifier compt.
 
 ## Styling
-Try to style your new components a little bit. Your starting point is ./src/scss/base.scss.
+I have just added some basic Scss for each component.
 
 # Bonus task
-PageData contains seo data. Try to make them appear in the HTML header. 
-Feel free to install new packages! You don’t have to reinvent the wheel.
+The seo data are now displayed in meta tags in the HTML header thanks to importing the MetaTags from 'react-meta-tags'
+
+# Bonus Test
+
+I have written some basic tests for each Component using `enzyme`, and a main test for the CMSComponent. 
+
+aTags from 'react-meta-tags'
 
 # How to start:
-1. Navigate to kruu.com-test.
-2. run `yarn install`
-3. run `yarn start`
 
-# Result
-Please remove the node_modules folder before you send us back a zipped version of your project.
+1. run `yarn install`
+2. run `yarn start`
+ 
+for the TEST :
+
+   run `npm test`
+=======
+# cms-challenge
+>>>>>>> 198dfe481deead6464378bf286cb808f0b15f664
